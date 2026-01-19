@@ -3,13 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./output.css" rel="stylesheet">
   
 </head>
 
 <!-- important npx tailwindcss -i ./src/input.css -o ./output.css --watch -->
 
-<body class=" font-Inter max-w-480 bg-red-100 m-auto"> 
+<body class="font-Inter">
+
+  <nav>
+
+    <div class=" m-auto max-w-[1600px] h-[70px] md:h-[92px] flex items-center justify-between bg-[#1A0B2E] text-white px-4 md:px-50 ">
+
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold "><span class="text-white">Tech</span><span class="bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+      </div>
+
+      <div>
+        <ul class=" hidden md:flex gap-6">
+          <li class="hover:bg-pink-600 hover:text-lg hover:text-white duration-100"><a href="#About">About</a></li>
+          <li class="hover:bg-pink-600 hover:text-lg hover:text-white duration-100"><a href="#Episodes">Episodes</a></li>
+          <li class="hover:bg-pink-600 hover:text-lg hover:text-white duration-100"><a href="#Host">Host</a></li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button class="hidden md:flex cursor-pointer  w-[150px] bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8] h-10 text-[18px] text-white font-semibold rounded-[50px] items-center justify-center gap-2">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+
+        <button class="md:hidden text-3xl"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
   
 </body>
 </html>
