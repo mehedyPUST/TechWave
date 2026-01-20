@@ -44,89 +44,44 @@
 
 <!-- Banner Section -->
 
-  <section class="bg-[#0F0620] max-w-[1600px] mx-auto">
-  <div
-  class=" mx-auto max-w-[1600px] min-h-full md:min-h-[760px] bg-[url('./images/hero-bg.png')] bg-no-repeat bg-top bg-[length:160%] md:bg-cover md:bg-center border border-transparent px-4
+  <section class="bg-[#0F0620] max-w-[1600px] mx-auto ">
+  <div class=" mx-auto max-w-[1600px] min-h-full md:min-h-[760px] bg-[url('./images/hero-bg.png')] bg-no-repeat bg-top bg-[length:160%] md:bg-cover md:bg-center border border-transparent px-4
   "
 >
 
 
-    <!-- Hero Visual -->
-    <div
-      class="relative mx-auto w-[200px] h-[200px] md:w-[350px] md:h-[350px] mt-12  sm:mt-[110px]">
+    <!-- Hero items -->
+    <div class="relative mx-auto w-[200px] h-[200px] md:w-[350px] md:h-[350px] mt-12  sm:mt-[110px]">
 
       <!-- NEW badge -->
       <div class="absolute top-1 right-1 sm:top-2 sm:right-2 z-3">
-        <button
-          class="px-2 py-0.5 sm:px-4 sm:py-1 rounded-full  bg-green-600 text-white
-                 text-[10px] sm:text-sm
-                 font-semibold
-                 shadow-lg shadow-black/40">
-          NEW
-        </button>
+        <button class=" cursor-pointer animate-pulse px-2 py-0.5 sm:px-4 sm:py-1 rounded-full  bg-green-600 text-[10px] sm:text-sm font-semibold shadow-lg shadow-black/40">NEW</button>
       </div>
 
       <!-- Circle background -->
-      <div
-        class="absolute inset-0 z-1
-               bg-[url('images/hero-circle.png')]
-               bg-no-repeat bg-contain bg-center">
+      <div class="absolute inset-0 z-1 bg-[url('images/hero-circle.png')] bg-no-repeat bg-contain bg-center">
       </div>
 
       <!-- Microphone -->
-      <div
-        class="absolute top-1/2 left-1/2 z-2
-               -translate-x-1/2 -translate-y-1/2">
-        <img
-          src="./images/microphone.png"
-          class="w-[80px] sm:w-[100px] md:w-[130px]"
-          alt="Microphone">
+      <div class="animate-pulse [animation-duration:3s] absolute top-1/2 left-1/2 z-2 -translate-x-1/2 -translate-y-1/2">
+        <img src="./images/microphone.png" class="w-[80px] sm:w-[100px] md:w-[130px]"alt="Microphone">
       </div>
 
     </div>
 
     <!-- Text Content -->
-    <div
-      class="mx-auto mt-1 md:mt-10
-             max-w-[550px]
-             flex flex-col items-center text-center">
+    <div class="mx-auto mt-1 md:mt-10 max-w-[550px] flex flex-col items-center text-center">
 
-      <h2
-        class="text-3xl sm:text-4xl md:text-6xl
-               text-white font-bold mt-0 md:mt-8">
-        TechWave
-      </h2>
+      <h2 class=" text-3xl sm:text-4xl md:text-6xl text-white font-bold mt-0 md:mt-8">TechWave</h2>
 
-      <p
-        class="text-white text-sm sm:text-base
-               mt-2 md:mt-4 mb-2  md:mb-4 px-4 sm:px-0">
-        Your daily dose of tech insights, productivity hacks, and personal growth
-      </p>
+      <p class="text-white text-sm sm:text-base mt-2 md:mt-4 mb-2  md:mb-4 px-4 sm:px-0"> Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
       <!-- Buttons -->
       <div class="flex flex-col sm:flex-row gap-3 mt-3">
 
-        <button
-          class="cursor-pointer flex items-center justify-center gap-2
-                 w-[200px] sm:w-[220px]
-                 h-9 sm:h-10
-                 text-sm sm:text-[18px]
-                 text-white font-semibold rounded-full
-                 bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">
-          <i class="fa-brands fa-spotify"></i>
-          Listen on Spotify
-        </button>
+        <button class=" cursor-pointer flex items-center justify-center gap-2 w-[200px] sm:w-[220px] h-9 sm:h-10 text-sm sm:text-[18px] text-white font-semibold rounded-full bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"> <i class="fa-brands fa-spotify"></i> Listen on Spotify </button>
 
-        <button
-          class=" cursor-pointer flex items-center justify-center gap-2
-                 w-[200px] sm:w-[220px]
-                 h-9 sm:h-10
-                 text-sm sm:text-[18px]
-                 border border-green-500
-                 text-green-500 font-semibold rounded-full">
-          <i class="fa-solid fa-envelope"></i>
-          Subscribe
-        </button>
+        <button class=" cursor-pointer flex items-center justify-center gap-2 w-[200px] sm:w-[220px] h-9 sm:h-10 text-sm sm:text-[18px] border border-green-500 text-green-500 font-semibold rounded-full"> <i class="fa-solid fa-envelope"></i> Subscribe </button>
 
       </div>
 
@@ -137,30 +92,35 @@
 
 
 <section>
+
   <div class="mx-auto max-w-[1600px] bg-[#1A0B2E] flex flex-col">
     <div class="text-center text-white max-w-[1200px] mx-auto mb-[40px] md:mb-[80px]  ">
       <h1 class="text-3xl md:text-5xl font-bold mt-2 md:mt-0 mb-4  ">About The Podcast</h1>
 
 
-      <p class="px-4 md:px-0 text-[12px] md:text-[16px]  ">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
-We break down complex topics into digestible insights, explore productivity strategies that actually work,
-and share stories of personal growth from industry leaders. <br> <br> Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+      <p class="px-4 md:px-0 text-[12px] md:text-[16px]  ">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders. <br> <br> Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+
     </div>
 
 
     <div class=" text-white md:max-w-[600px] md:max-w-[1200px] m-auto grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-2 gap-12 md:gap-20 justify-between text-center uppercase">
+      
       <div>
         <h1 class="text-green-500 font-black text-[48px]">150K+</h1>
         <p>Monthly Listeners</p>
+
       </div>
+
       <div>
         <h1 class="text-green-500 font-black text-[48px]">200+</h1>
         <p>Episodes Published</p>
       </div>
+
       <div>
         <h1 class="text-green-500 font-black text-[48px]">4.9★</h1>
         <p>Average Rating</p>
       </div>
+
       <div>
         <h1 class="text-green-500 font-black text-[48px]">50+</h1>
         <p>Industry Experts</p>
@@ -182,17 +142,12 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] max-w-[1200px] mx-auto">
 
 
-
-
-
     <!-- premium audio  -->
     <div class="bg-[#351165] rounded-[40px] text-white text-start p-8 md:p-10 lg:row-span-2 lg:h-[480px]">
       <img src="./images/headphone.png" alt="">
       <h1 class="mt-4 mb-4 text-[24px] font-bold ">Premium Audio Quality</h1>
       <p class="leading-[24px]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
-
     </div>
-
 
 
     <!-- mobile friendly -->
@@ -204,9 +159,6 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
     </div>
     
 
-
-
-
     <!-- global -->
 
     <div class="bg-[#351165] rounded-[40px] text-white text-start p-8 md:p-10 lg:col-span-2">
@@ -215,8 +167,6 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
       <h1 class="mt-4 mb-4 text-[24px] font-bold ">Global Community</h1>
       <p class="leading-[24px]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
     </div>
-
-
 
 
     <!-- exclusive -->
@@ -229,8 +179,6 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
     </div>
 
 
-
-
     <!-- rich -->
 
     <div class="bg-[#351165] rounded-[40px] text-white text-start p-8 md:p-10">
@@ -241,13 +189,7 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
     </div>
 
 
-
-
-
   </div>
-
-
-
 
 </section>
 
@@ -397,19 +339,7 @@ and share stories of personal growth from industry leaders. <br> <br> Join thous
 
   </div>
 
-  
-
-
 </footer>
-
-
-
-  
-
-
-  
-
-  
 
   
 </body>

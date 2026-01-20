@@ -58,6 +58,7 @@
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -228,6 +229,9 @@
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
@@ -339,6 +343,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
@@ -383,6 +390,12 @@
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
+  .w-18 {
+    width: calc(var(--spacing) * 18);
   }
   .w-\[80px\] {
     width: 80px;
@@ -447,6 +460,9 @@
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -546,12 +562,6 @@
   }
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
-  }
-  .gap-y-\[0px\] {
-    row-gap: 0px;
-  }
-  .gap-y-\[15px\] {
-    row-gap: 15px;
   }
   .gap-y-\[30px\] {
     row-gap: 30px;
@@ -880,6 +890,9 @@
   .duration-100 {
     --tw-duration: 100ms;
     transition-duration: 100ms;
+  }
+  .\[animation-duration\:3s\] {
+    animation-duration: 3s;
   }
   .hover\:bg-pink-600 {
     &:hover {
@@ -1374,6 +1387,11 @@
 @property --tw-duration {
   syntax: "*";
   inherits: false;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
