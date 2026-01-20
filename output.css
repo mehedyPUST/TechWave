@@ -36,6 +36,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --font-weight-black: 900;
+    --aspect-video: 16 / 9;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-Inter: "Inter", sans-serif;
@@ -250,6 +251,12 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-\[12px\] {
+    margin-bottom: 12px;
+  }
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
@@ -261,6 +268,12 @@
   }
   .hidden {
     display: none;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
@@ -274,8 +287,14 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-full {
+    height: 100%;
+  }
   .min-h-fit {
     min-height: fit-content;
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-\[80px\] {
     width: 80px;
@@ -285,6 +304,9 @@
   }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-\[550px\] {
     max-width: 550px;
@@ -345,6 +367,12 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-\[24px\] {
+    border-radius: 24px;
+  }
   .rounded-\[40px\] {
     border-radius: 40px;
   }
@@ -353,6 +381,10 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-t-\[24px\] {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -372,6 +404,9 @@
   }
   .bg-\[\#230E3D\] {
     background-color: #230E3D;
+  }
+  .bg-\[\#250D44\] {
+    background-color: #250D44;
   }
   .bg-\[\#351165\] {
     background-color: #351165;
@@ -422,6 +457,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-\[24px\] {
+    padding: 24px;
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -686,6 +724,11 @@
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-4 {
