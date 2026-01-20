@@ -38,29 +38,23 @@
 <!-- ------------------------------------------------------------------------------------------- -->
 
 
-
   <section class="bg-[#0F0620] max-w-[1600px] mx-auto">
   <div
-    class="mx-auto max-w-[1600px]
-           min-h-[760px]
-           bg-[url('./images/hero-bg.png')]
-           bg-no-repeat bg-top bg-contain
-           border-1 border-transparent
-           px-4">
+  class=" mx-auto max-w-[1600px] min-h-[760px] bg-[url('./images/hero-bg.png')] bg-no-repeat bg-top bg-[length:160%] md:bg-cover md:bg-center border border-transparent px-4
+  "
+>
+
 
     <!-- Hero Visual -->
     <div
-      class="relative mx-auto
-             w-[260px] h-[260px]
-             sm:w-[300px] sm:h-[300px]
-             md:w-[350px] md:h-[350px]
-             mt-20 md:mt-[101px]">
+      class="relative mx-auto w-[200px] h-[200px] md:w-[350px] md:h-[350px] mt-12  sm:mt-[110px]">
 
       <!-- NEW badge -->
-      <div class="absolute top-2 right-2 z-30">
+      <div class="absolute top-1 right-1 sm:top-2 sm:right-2 z-3">
         <button
-          class="px-4 py-1 rounded-full
-                 bg-green-600 text-white text-sm font-semibold
+          class="px-2 py-0.5 sm:px-4 sm:py-1 rounded-full  bg-green-600 text-white
+                 text-[10px] sm:text-sm
+                 font-semibold
                  shadow-lg shadow-black/40">
           NEW
         </button>
@@ -68,38 +62,38 @@
 
       <!-- Circle background -->
       <div
-        class="absolute inset-0 z-10
+        class="absolute inset-0 z-1
                bg-[url('images/hero-circle.png')]
                bg-no-repeat bg-contain bg-center">
       </div>
 
       <!-- Microphone -->
       <div
-        class="absolute top-1/2 left-1/2 z-20
+        class="absolute top-1/2 left-1/2 z-2
                -translate-x-1/2 -translate-y-1/2">
         <img
           src="images/microphone.png"
-          class="w-[110px] md:w-[130px]"
-          alt="">
+          class="w-[80px] sm:w-[100px] md:w-[130px]"
+          alt="Microphone">
       </div>
 
     </div>
 
     <!-- Text Content -->
     <div
-      class="mx-auto mt-10
+      class="mx-auto mt-1 md:mt-10
              max-w-[550px]
              flex flex-col items-center text-center">
 
       <h2
         class="text-3xl sm:text-4xl md:text-6xl
-               text-white font-bold mt-8">
+               text-white font-bold mt-0 md:mt-8">
         TechWave
       </h2>
 
       <p
         class="text-white text-sm sm:text-base
-               mt-4 mb-4 px-2">
+               mt-2 md:mt-4 mb-2  md:mb-4 px-4 sm:px-0">
         Your daily dose of tech insights, productivity hacks, and personal growth
       </p>
 
@@ -108,7 +102,8 @@
 
         <button
           class="flex items-center justify-center gap-2
-                 w-[220px] h-10
+                 w-[200px] sm:w-[220px]
+                 h-9 sm:h-10
                  text-sm sm:text-[18px]
                  text-white font-semibold rounded-full
                  bg-gradient-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">
@@ -118,7 +113,8 @@
 
         <button
           class="flex items-center justify-center gap-2
-                 w-[220px] h-10
+                 w-[200px] sm:w-[220px]
+                 h-9 sm:h-10
                  text-sm sm:text-[18px]
                  border border-green-500
                  text-green-500 font-semibold rounded-full">
